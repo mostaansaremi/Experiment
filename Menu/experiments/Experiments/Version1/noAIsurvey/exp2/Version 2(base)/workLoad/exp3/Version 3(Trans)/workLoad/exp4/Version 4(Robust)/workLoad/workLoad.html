@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Workload Survey</title>
+ <link rel="stylesheet" href="survey.css">
+ <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+ <script src="https://www.back4app.com/js/back4app.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form id="surveyForm">
+
+      <div class="box-1">
+
+      <h1>Post-Game Survey</h1><br>
+        
+        <div class="box-2">
+          <div>
+            <div>
+              <img class="gif" src="car3-flip.gif" alt="Description of GIF">
+              <div class="logo">
+                <img src="logo1.jpeg" class="logo-img">
+              </div> 
+
+            </div>
+            
+          </div>
+        </div>
+        
+        <div>
+          <div class="box-3">
+            
+            <div class="question">
+              <label>1. I believe that the AI answers were accurate.</label>
+              <div class="answers">
+                <div>
+                  <input class="option" type="radio" name="q1" value="Not Accurate"> Not Accurate
+                  <input class="option" type="radio" name="q1" value="Somewhat Accurate"> Somewhat Accurate
+                  <input class="option" type="radio" name="q1" value="Accurate half the time"> Accurate half the time
+
+                </div>
+                <div>
+                  <input class="option" type="radio" name="q1" value="Mostly Accurate"> Mostly Accurate
+                  <input class="option" type="radio" name="q1" value="Completely accurate"> Completely accurate
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="question">
+              <label>2. How mentally demanding was the task?</label> 
+              <div class="answers">
+                <input class="range" type="range" name="q2" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue2', this.value)">
+                <p id="rangeValue2">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>3. How physically demanding was the task?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q3" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue3', this.value)">
+                <p id="rangeValue3">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>4. How hurried or rushed was the pace of the task?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q4" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue4', this.value)">
+                <p id="rangeValue4">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>5. How successful were you in accomplishing what you were asked to do? </label> 
+              <div class="answers">
+                <input class="range" type="range" name="q5" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue5', this.value)">
+                <p id="rangeValue5">0</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <label>6. How hard did you have to work (mentally and physically) to accomplish your level of performance?</label> 
+              <div class="answers">
+                <input class="range" type="range" name="q6" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue6', this.value)">
+                <p id="rangeValue6">0</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <label>7. How insecure, discouraged, irritated, stressed, and annoyed were you?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q7" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue7', this.value)">
+                <p id="rangeValue7">0</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <label>8.  I would feel comfortable relying on an AI system in my daily life.</label> 
+              <div class="answers">
+                <div>
+                  <input class="option" type="radio" name="q8" value="Strongly disagree"> Strongly disagree
+                  <input class="option" type="radio" name="q8" value="Disagree"> Disagree
+                  <input class="option" type="radio" name="q8" value="Neither agree nor disagree"> Neither agree nor disagree
+                </div>
+                <div>
+                  <input class="option" type="radio" name="q8" value="Agree"> Agree
+                  <input class="option" type="radio" name="q8" value="Strongly agree"> Strongly agree
+                </div>
+              </div>
+            </div>
+
+            <div class="question">
+           
+              <label>9.  I trusted the AI suggestions in this game.</label> 
+              <div class="answers">
+                <input class="option" type="radio" name="q9" value="Never"> Never
+                <input class="option" type="radio" name="q9" value="Often"> Often
+                <input class="option" type="radio" name="q9" value="Half of the time"> Half of the time
+                <input class="option" type="radio" name="q9" value="Usually"> Usually
+                <input class="option" type="radio" name="q9" value="All the time"> All the time
+              </div>
+            </div>
+
+            <div class="question">
+                <label>10.  I could access a great deal of information which explained how the AI system worked.</label> 
+                <div class="answers">
+                  <div>
+                    <input class="option" type="radio" name="q10" value="Strongly disagree"> Strongly disagree
+                    <input class="option" type="radio" name="q10" value="Disagree"> Disagree
+                    <input class="option" type="radio" name="q10" value="Neither agree nor disagree"> Neither agree nor disagree
+                  </div>
+                  <div>
+                    <input class="option" type="radio" name="q10" value="Agree"> Agree
+                    <input class="option" type="radio" name="q10" value="Strongly agree"> Strongly agree
+                  </div>
+                </div>
+            </div>
+            <div class="question">
+              <label>11. I feel that the amount of available information regarding the AI system's reasoning was plenty.</label> 
+              <div class="answers">
+                <div>
+                  <input class="option" type="radio" name="q11" value="Strongly disagree"> Strongly disagree
+                  <input class="option" type="radio" name="q11" value="Disagree"> Disagree
+                  <input class="option" type="radio" name="q11" value="Neither agree nor disagree"> Neither agree nor disagree
+                </div>
+                <div>
+                  <input class="option" type="radio" name="q11" value="Agree"> Agree
+                  <input class="option" type="radio" name="q11" value="Strongly agree"> Strongly agree
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <label>12. It was ………… to understand how the AI performed the task.</label> 
+              <div class="answers">
+                <input class="option" type="radio" name="q12" value="Very Easy"> Very Easy
+                <input class="option" type="radio" name="q12" value="Easy"> Easy
+                <input class="option" type="radio" name="q12" value="Ok"> Ok
+                <input class="option" type="radio" name="q12" value="Hard"> Hard
+                <input class="option" type="radio" name="q12" value="Very Hard"> Very Hard
+              </div>
+          </div>
+          <div class="question">
+            <label>13.  I think the AI predictions were sensitive to the changes in the drawing.</label> 
+            <div class="answers">
+              <div>
+                <input class="option" type="radio" name="q13" value="Strongly disagree"> Strongly disagree
+                <input class="option" type="radio" name="q13" value="Disagree"> Disagree
+                <input class="option" type="radio" name="q13" value="Neither agree nor disagree"> Neither agree nor disagree
+              </div>
+              <div>
+                <input class="option" type="radio" name="q13" value="Agree"> Agree
+                <input class="option" type="radio" name="q13" value="Strongly agree"> Strongly agree
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <label>14. The variability in the AI suggestions was obvious.</label> 
+            <div class="answers">
+              <div>
+                <input class="option" type="radio" name="q14" value="Strongly disagree"> Strongly disagree
+                <input class="option" type="radio" name="q14" value="Disagree"> Disagree
+                <input class="option" type="radio" name="q14" value="Neither agree nor disagree"> Neither agree nor disagree
+              </div>
+              <div>
+                <input class="option" type="radio" name="q14" value="Agree"> Agree
+                <input class="option" type="radio" name="q14" value="Strongly agree"> Strongly agree
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <label>15. The AI changed its suggestions frequently.</label> 
+            <div class="answers">
+              <div>
+                <input class="option" type="radio" name="q15" value="Strongly disagree"> Strongly disagree
+                <input class="option" type="radio" name="q15" value="Disagree"> Disagree
+                <input class="option" type="radio" name="q15" value="Neither agree nor disagree"> Neither agree nor disagree
+              </div>
+              <div>
+                <input class="option" type="radio" name="q15" value="Agree"> Agree
+                <input class="option" type="radio" name="q15" value="Strongly agree"> Strongly agree
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <label>16. To what extent do you agree that the AI performance was fair and accurate among each set of drawings?</label> 
+            <div class="answers">
+              <div>
+                <input class="option" type="radio" name="q16" value="Strongly disagree"> Strongly disagree
+                <input class="option" type="radio" name="q16" value="Disagree"> Disagree
+                <input class="option" type="radio" name="q16" value="Neither agree nor disagree"> Neither agree nor disagree
+              </div>
+              <div>
+                <input class="option" type="radio" name="q16" value="Agree"> Agree
+                <input class="option" type="radio" name="q16" value="Strongly agree"> Strongly agree
+              </div>
+            </div>
+          </div>
+
+          
+            <label>17. Do you think the AI was biased toward a particular class(es) of drawings?</label> 
+            <div class="answers">
+              <div>
+                <input class="option" type="radio" name="q17" value="Strongly disagree"> Strongly disagree
+                <input class="option" type="radio" name="q17" value="Disagree"> Disagree
+                <input class="option" type="radio" name="q17" value="Neither agree nor disagree"> Neither agree nor disagree
+              </div>
+              <div>
+                <input class="option" type="radio" name="q17" value="Agree"> Agree
+                <input class="option" type="radio" name="q17" value="Strongly agree"> Strongly agree
+              </div>
+            </div>
+          
+
+
+            <div class="submit-button">
+              <button type="submit" onclick="submitSurvey(event)">Submit Survey</button>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+  </form>
+  <script src="saveWork.js"></script>
+</body>
+ <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>

@@ -1,0 +1,128 @@
+ 
+    body {
+      margin: 0; 
+      padding: 0;
+      background-image: url(Pattern-Mechanic\ Car-B2.png); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-position: center center; 
+      background-attachment: local;
+  }
+
+    body{
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     
+    }
+
+    .box-1{
+      background-color: white;
+      max-width: 855px; 
+      padding: 10px; 
+      margin-top: 25px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    h1{
+      font-weight: 450;
+      font-size: 36px;
+      color: rgb(0, 0, 0);
+      background-color: white;
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      border-radius: 10px;
+     
+    }
+
+    .box-2{
+      background-color: white;
+      vertical-align: center;
+      padding: 0px;
+      margin-bottom: -20px;
+    }
+    .box-3{
+      
+      padding-bottom: 40px;
+      margin-bottom: 10px;
+    }
+    .logo{
+      text-align: left;
+      margin: -10px 0px 12px 0px;
+      
+      display: inline-flex;
+      
+    }
+    .logo-img{
+      width: 28%;
+      border-radius: 50%;
+      margin: -100px 0px 10px -20px;
+    
+    }
+    .gif{
+      height: 58px;
+      width: 630px;
+      
+      margin-left: 110px;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      margin-bottom: -30px;
+
+    }
+    
+    .box1{
+      display: inline-block;
+      margin: -100px 10px -15px 10px;
+    }
+    .box2{
+     
+      display: inline-block;
+      margin: 0px 10px -15px 10px;
+    }
+    
+    
+    .container{
+      text-align: left;
+      padding-left: 10px;
+      margin-left: 50px;
+      margin-right: 20px;
+    }
+    
+    
+    .inProgress:hover{
+     
+      font-weight: bolder;
+      border-bottom-color: rgb(0, 0, 0);
+      
+      cursor: pointer;
+    }
+    .inProgress{
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px;
+      display: block;
+      border-color: black;
+      border-style: dashed;
+      margin-bottom:  10px ;
+      background-color: rgb(161, 225, 190);
+      width: 583px;
+      height: 55px;
+      cursor: pointer;
+    }
+    button{
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px;
+      display: block;
+      margin-bottom:  10px ;
+      background-color: rgb(227, 233, 230);
+      border:rgb(0, 0, 0);
+      width: 583px;
+      height: 55px;
+      cursor: pointer;
+
+    }
+   

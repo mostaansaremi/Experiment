@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>noAI Survey</title>
+ <link rel="stylesheet" href="survey.css">
+ <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+ <script src="https://www.back4app.com/js/back4app.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form id="surveyForm">
+
+      <div class="box-1">
+
+      <h1>Post-Game Survey</h1><br>
+        
+        <div class="box-2">
+          <div>
+            <div>
+              <img class="gif" src="car3-flip.gif" alt="Description of GIF">
+              <div class="logo">
+                <img src="logo1.jpeg" class="logo-img">
+              </div> 
+
+            </div>
+            
+          </div>
+        </div>
+        
+        <div>
+          <div class="box-3">
+            
+            
+            <div class="question">
+              <label>1. How mentally demanding was the task?</label> 
+              <div class="answers">
+                <input class="range" type="range" name="q1" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue2', this.value)">
+                <p id="rangeValue2">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>2. How physically demanding was the task?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q2" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue3', this.value)">
+                <p id="rangeValue3">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>3. How hurried or rushed was the pace of the task?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q3" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue4', this.value)">
+                <p id="rangeValue4">0</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>4. How successful were you in accomplishing what you were asked to do? </label> 
+              <div class="answers">
+                <input class="range" type="range" name="q4" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue5', this.value)">
+                <p id="rangeValue5">0</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <label>5. How hard did you have to work (mentally and physically) to accomplish your level of performance?</label> 
+              <div class="answers">
+                <input class="range" type="range" name="q5" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue6', this.value)">
+                <p id="rangeValue6">0</p>
+              </div>
+            </div>
+
+            
+              <label>6. How insecure, discouraged, irritated, stressed, and annoyed were you?</label>
+              <div class="answers">
+                <input class="range" type="range" name="q6" min="0" max="100" value="0" oninput="updateRangeValue('rangeValue7', this.value)">
+                <p id="rangeValue7">0</p>
+              </div>
+            
+
+
+            <div class="submit-button">
+              <button type="submit" onclick="submitSurveyNOAI(event)">Submit Survey</button>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+  </form>
+  <script src="noAI.JS"></script>
+</body>
+ <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>

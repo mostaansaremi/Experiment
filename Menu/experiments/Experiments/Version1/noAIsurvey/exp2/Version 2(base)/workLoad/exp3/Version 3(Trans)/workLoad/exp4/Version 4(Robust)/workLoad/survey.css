@@ -1,0 +1,161 @@
+body {
+  margin: 0; 
+  padding: 0;
+  background-image: url(Pattern-Mechanic\ Car-B2.png); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-attachment: local;
+}
+
+body{
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  
+  
+}
+
+.box-1{
+  background-color: white;
+  max-width: 865px; 
+  padding: 10px; 
+  margin-top: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+h1{
+  font-weight: 450;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+  
+
+.box-2{
+  background-color: white;
+  vertical-align: center;
+  padding: 0px;
+}
+
+.logo{
+  text-align: left;
+  margin: -10px 0px 12px 0px;
+  
+  display: inline-flex;
+  
+}
+.logo-img{
+  width: 28%;
+  border-radius: 50%;
+  margin: -100px 0px 10px -20px;
+
+}
+.gif{
+  height: 58px;
+  width: 630px;
+  
+  margin-left: 110px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+
+}
+
+
+.box-3 {
+  margin-top: -20px;
+  padding: 20px;
+  border-color: #130e0e;
+  border-width: 1px;
+  border-style: groove;
+  height: 450px; 
+  overflow-y: auto;
+}
+
+
+.survey-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.survey-question {
+  background-color: white;
+  max-width: 855px;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.survey-question h2 {
+  font-weight: 450;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.question {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #130e0e;
+  padding-bottom: 13px;
+  
+}
+
+.label {
+  display: block;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.option {
+  margin: 22px; 
+}
+
+.submit-button {
+  margin-top: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.range{
+  margin: 20px; 
+  width: 70%;
+
+}

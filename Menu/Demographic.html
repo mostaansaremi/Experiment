@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Demographic Survey</title>
+ <link rel="stylesheet" href="survey.css">
+ <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+ <script src="https://www.back4app.com/js/back4app.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form id="surveyForm">
+      <div class="box-1">
+
+      <h1>Demographic Survey</h1>
+        
+        <div class="box-2">
+          <div>
+            <div>
+              <img class="gif" src="car3-flip.gif" alt="Description of GIF">
+              <div class="logo">
+                <img src="logo1.jpeg" class="logo-img">
+              </div> 
+
+            </div>
+            
+          </div>
+        </div>
+        
+        <div>
+          <div class="box-3">
+           
+            <div class="question">
+              <label>1. Gender:</label>
+              <div class="answers">
+                <input class="option" type="radio" name="gender" value="male"> Male
+               <input  class="option" type="radio" name="gender" value="female"> Female
+               <input  class="option" type="radio" name="gender" value="not_declared"> Not declared/assigned sex not listed
+              </div>
+              
+            </div>
+            
+            <div class="question">
+              <label>2. Age:</label> 
+              <input class="option" type="text" name="age">
+            </div>
+            
+            <div class="question">
+              <label>3. Education level:</label>
+              <div class="answers">
+                <input class="option" type="radio" name="education" value="undergraduate"> Undergraduate student
+                <input class="option" type="radio" name="education" value="masters"> Master's student
+                <input class="option" type="radio" name="education" value="phd"> PhD student
+              </div>
+            </div>
+            
+            <div class="question">
+              <label>4. Educational field:</label>
+              <input class="option" type="text" name="educationalField">
+            </div>
+            
+            <div class="question">
+              <label>5. Do you have any professional work experience? </label> 
+              <div class="answers">
+                <input class="option" type="radio" name="experience" value="Less than 6 months">Less than 6 months
+                <input class="option" type="radio" name="experience" value="6 to 12 months"> 6 to 12 months
+                <input class="option" type="radio" name="experience" value="1 to 2 years"> 1 to 2 years
+                <input class="option" type="radio" name="experience" value="More than 2 years"> More than 2 years
+              </div>
+            </div>
+            <div class="question">
+              <label>6. What is your race/ethnicity?</label> 
+              <div class="answers">
+                <div>
+                  <input class="option" type="radio" name="race" value="American Indian or Alaska Native">American Indian or Alaska Native
+                 <input class="option" type="radio" name="race" value="Asian"> Asian
+                 <input class="option" type="radio" name="race" value="Black or African American  "> Black or African American
+                </div>
+                <div>
+                  <input class="option" type="radio" name="race" value="Hispanic, Latino, or Spanish Origin"> Hispanic, Latino, or Spanish Origin
+                  <input class="option" type="radio" name="race" value="White"> White
+                  <input class="option" type="radio" name="race" value="Middle Eastern or North African"> Middle Eastern or North African
+                </div>
+                
+                
+              </div>
+            </div>
+
+            <div class="question">
+              <label>7. What is your native language?</label>
+              <input class="option" type="text" name="Language">
+            </div>
+
+            <div class="question">
+              <label>8. Do you have any experience in driving?</label> 
+              <div class="answers">
+                <input class="option" type="radio" name="exp_riding" value="Novince">Novince
+                <input class="option" type="radio" name="exp_riding" value="Beginner"> Beginner
+                <input class="option" type="radio" name="exp_riding" value="Mid-level"> Mid-Level
+                <input class="option" type="radio" name="exp_riding" value="Advanced"> Advances
+                <input class="option" type="radio" name="exp_riding" value="Expert"> Expert
+              </div>
+            </div>
+           
+              <label>9.  How familiar are you with Artificial Intelligence systems?</label> 
+              <div class="answers">
+                <input class="option" type="radio" name="AI" value="Not at all">Not at all
+                <input class="option" type="radio" name="AI" value="A little bit"> A little bit
+                <input class="option" type="radio" name="AI" value="Somewhat"> Somewhat
+                <input class="option" type="radio" name="AI" value="Familiar"> Familiar
+                <input class="option" type="radio" name="AI" value="Completely Familiar"> Completely Familiar
+              </div>
+            <div class="submit-button">
+              <button type="submit" onclick="submitSurvey(event)" >Submit Survey</button>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+  </form>
+  <script src="saveDemo.js"></script>
+</body>
+ 
+ <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>

@@ -1,0 +1,99 @@
+ 
+    body {
+      margin: 0; 
+      padding: 0;
+      background-image: url(Pattern-Mechanic\ Car-B2.png); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-position: center center; 
+      background-attachment: local;
+  }
+
+    body{
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      margin: 120px 3px 3px 3px;
+     
+    }
+
+    .box-1{
+      background-color: white;
+      width: 855px;
+      height: 480px;
+      border-radius: 10px;
+      padding-left: 20px; 
+      padding-right: 20px;
+      margin: 20px;
+
+    }
+
+    h1{
+      font-weight: 450;
+      font-size: 36px;
+      color: rgb(0, 0, 0);
+      background-color: white;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 5px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      border-radius: 10px; 
+      }
+     
+    
+
+    p {
+      line-height: 1.8; /* Adjust line height to control line spacing */
+      margin-top: 10px;
+      text-indent: 2em;
+    }
+
+    .box-2{
+      background-color: white;
+      vertical-align: center;
+      padding: 0px;
+      padding-bottom: -10px;
+    }
+    
+    .logo{
+      text-align: left;
+      margin: -10px 0px 0px 0px;
+      
+      display: inline-flex;
+      
+    }
+    .logo-img{
+      width: 20%;
+      border-radius: 42%;
+      margin: -20px 0px 0px -20px;
+    
+    }
+    .container {
+      display: flex;
+      justify-content: flex-end; /* Position the content to the right */
+      align-items: center;
+    }
+    button{
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px;
+      display: block;
+      position: right;
+      border: none;
+      width: 140px;
+      height: 40px;
+      margin-right: 10px;
+
+      cursor: pointer;
+      background-color: rgb(161, 225, 190);
+
+    }
+    button:hover{
+      font-weight: bolder;
+      border-bottom-color: rgb(0, 0, 0);
+      width: 142px;
+      height: 42px;
+      cursor: pointer;
+    }
+    
+    

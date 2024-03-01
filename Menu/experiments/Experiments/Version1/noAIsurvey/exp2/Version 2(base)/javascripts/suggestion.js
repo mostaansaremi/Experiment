@@ -67,3 +67,9 @@ function suggestion(closestIndex, count2) {
   }
 }
 
+function updateIterationCount() {
+  var iterationElement = document.getElementById('iterationNumber');
+  if (iterationElement) {
+      iterationElement.innerText = count; // Assuming 'count' is your iteration variable
+  }
+}

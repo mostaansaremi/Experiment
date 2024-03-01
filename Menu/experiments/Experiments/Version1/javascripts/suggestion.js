@@ -23,8 +23,6 @@ function findClosestIndex(value, arr) {
 }
 
 
-
-
 function suggestion(closestIndex ) {
   var downArrowElement = document.getElementById("downArrow");
   var upArrowElement = document.getElementById("upArrow");

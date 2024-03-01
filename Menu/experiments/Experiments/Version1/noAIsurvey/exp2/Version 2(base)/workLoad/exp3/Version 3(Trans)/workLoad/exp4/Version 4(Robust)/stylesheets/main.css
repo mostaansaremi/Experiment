@@ -548,20 +548,20 @@ progress[value]::-webkit-progress-value{
 }
 .table {
 	margin-left: 40px;
-	margin-top: -240px;
-	width: 16%; 
+	margin-top: -255px;
+	width: 22%; 
 	text-align: center;
 	border-collapse: collapse; 
 }
 
 .table th{
-	padding: 10px; 
+	padding: 8px; 
 	border: 2px solid #b50e0e; 
 	
 
 }
 .table td {
-	padding: 10px; 
+	padding: 8px; 
 	border: 2px solid #489d67; 
 }
 /* message box */

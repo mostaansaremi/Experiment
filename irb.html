@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IRB Consent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>IRB Consent Form</h1>
+  </header>
+
+  <main>
+    <section id="irbConsentArea">
+      <h2>Information</h2>
+      <p>
+        This study has been approved by the IRB. Please read the 
+        consent information carefully before continuing.
+      </p>
+      <p>
+        By continuing in this study, you acknowledge you have 
+        read and understood the consent form and agree to participate. 
+        You may withdraw at any time.
+      </p>
+
+      <label style="display: block; margin: 1rem 0;">
+        <input type="checkbox" id="consentCheck" />
+        I ACCEPT
+      </label>
+
+      <!-- type="button" => no form submission or reload -->
+      <button type="button" id="irbContinueButton">
+        Continue to Pre-Survey
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Experiment</p>
+  </footer>
+
+  <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

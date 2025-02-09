@@ -1,0 +1,130 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Footer styling */
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;      /* center vertically */
+  justify-content: center; /* center horizontally */
+  padding: 2rem;
+}
+
+/* Center all content in a <section> up to 600px wide */
+section {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Buttons: Blue, same size, white text */
+button {
+  background-color: #007BFF; 
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Label + radio side by side */
+label input[type="radio"] {
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+label {
+  display: inline-block; 
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+/* Form styling */
+form {
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+form p {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+form button[type="submit"] {
+  margin-top: 1rem;
+}
+
+/* case counter for the number of cases*/
+
+#caseCounter {
+  font-size: 2rem;    /* or 3rem, depending on how big you want */
+  font-weight: bold;  /* make it bolder if you'd like */
+  margin-bottom: 3rem; 
+}
+
+
+/* Speech bubble for diagnosis in experiment */
+#diagnosisContainer {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 500px;
+  background-color: #f0f0f0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: left;
+}
+#diagnosisContainer::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #f0f0f0;
+}
+#diagnosisText {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Scenario heading */
+#scenarioText {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Hide the extra Q form until user picks trust or not-trust */
+#extraQuestionsForm {
+  display: none;
+}
+
+/* Thank you message styling */
+#thankYouMessage {
+  margin-top: 2rem;
+}
+#thankYouMessage h2 {
+  margin-bottom: 1rem;
+}

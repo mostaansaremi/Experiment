@@ -1,69 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>Sing in Form</title>
- <link rel="stylesheet" href="login-css/Sign-in.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <form id="sign-inForm">
-      <div class="box-1">
-      <h1>Sign In Form</h1>
-      <form action="signin.php" method="POST"></form>
-        <div class="box-2">
+  <header>
+    <h1>Home</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to our experiment!</h2>
+      <p>
+        If you would like to participate, please click on the About button to learn more about this experiment.
+      </p>
+      <!-- Simple button to go to About -->
+      <button onclick="location.href='about.html';">Go to About</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Experiment</p>
+  </footer>
 
-          <div>
-            <div class="logo">
-              <img src="login-css/logo1.jpeg" class="logo-img">
-            </div> 
-          </div>
-          <div class="Email">
-
-            <label for="Email"><b>Email</b></label>
-            <div>
-              <input id="Email" type="text" placeholder="Enter your Email" class="entry" name="Email" required>
-            </div>
-
-          </div>
-          <div class="Full Name">
-
-            <label for="FullName"><b>Full Name</b></label>
-            <div>
-              <input id="FullName" type="text" placeholder="Enter your Full Name" class="entry" name="Fullname" required>
-            </div>
-
-          </div>
-          
-          <div class="Username">
-
-            <label for="Username"><b>Username</b></label>
-            <div>
-              <input id="Username" type="text" placeholder="Enter Username" class="entry" name="Username" required>
-            </div>
-            
-          </div>
-      
-          <div class="Password">
-
-            <label for="Password"><b>Password</b></label>
-            <div>
-              <input id="Password" type="password" placeholder="Enter Password" class="entry" name="Password" required>
-            </div>
-
-          </div>
-      
-          <div class="login-b" type="submit" id="submitBtn" value="sign-in">
-            <button class="signin-button" type="submit">Sign Up</button>
-          </div>
-          
-          
-        </form>
-          
-        </div>
-        <div class="log-in">
-          <span>Have an account? <a href="log-in.html">login</a></span>
-        </div>
-      </div>
-      <script src="login-js/Sign-in.js"></script>
+  <!-- Parse + your script -->
+  <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
